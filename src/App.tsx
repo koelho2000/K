@@ -139,35 +139,55 @@ function Hero({ containerRef }: { containerRef: RefObject<HTMLDivElement | null>
 }
 
 function KBrothersVideo() {
-  const images = [
-    "/IMAGENS_K-BROTHERS/A Amizade video final-Cover.jpg",
-    "/IMAGENS_K-BROTHERS/buzinho a aventura-Cover.jpg",
-    "/IMAGENS_K-BROTHERS/ZUM-Cover.jpg"
+  const mediaItems = [
+    { type: 'video', src: "https://raw.githubusercontent.com/koelho2000/K/d3aa8933055bddd75a6d65547dd2c1405eb62827/The%20K%20-Brothers%20Logo%20Video%20preto%20fundo%20(video).mp4" },
+    { type: 'image', src: "/IMAGENS_K-BROTHERS/A Amizade video final-Cover.jpg" },
+    { type: 'image', src: "/IMAGENS_K-BROTHERS/buzinho a aventura-Cover.jpg" },
+    { type: 'image', src: "/IMAGENS_K-BROTHERS/ZUM-Cover.jpg" }
   ];
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % images.length);
-    }, 4000);
-    return () => clearInterval(interval);
-  }, []);
+    let timeout: NodeJS.Timeout;
+    if (mediaItems[currentIndex].type === 'image') {
+      timeout = setTimeout(() => {
+        setCurrentIndex((prev) => (prev + 1) % mediaItems.length);
+      }, 4000);
+    }
+    return () => clearTimeout(timeout);
+  }, [currentIndex]);
 
   return (
     <section className="relative min-h-screen bg-black py-16 @md:py-24 flex flex-col items-center justify-center overflow-hidden border-t border-white/10">
-      {/* Background Images */}
+      {/* Background Media */}
       <div className="absolute inset-0 z-0 bg-black">
         <AnimatePresence mode="wait">
-          <motion.img 
-            key={images[currentImageIndex]}
-            src={images[currentImageIndex]}
-            alt="The K-Brothers"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 0.4 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.5 }}
-            className="absolute inset-0 w-full h-full object-cover"
-          />
+          {mediaItems[currentIndex].type === 'image' ? (
+            <motion.img 
+              key={mediaItems[currentIndex].src}
+              src={mediaItems[currentIndex].src}
+              alt="The K-Brothers"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.4 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1.5 }}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          ) : (
+            <motion.video
+              key={mediaItems[currentIndex].src}
+              src={mediaItems[currentIndex].src}
+              autoPlay
+              muted
+              playsInline
+              onEnded={() => setCurrentIndex((prev) => (prev + 1) % mediaItems.length)}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.4 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1.5 }}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          )}
         </AnimatePresence>
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black/50 to-black" />
       </div>
