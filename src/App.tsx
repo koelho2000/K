@@ -42,19 +42,19 @@ const companies = [
     subtitle: "Energy in Action",
     description: "Série educativa sobre eficiência energética e sustentabilidade. Descobre a energia do futuro com Sunny, Breezy e Splashy!",
     url: "https://www.eia.pt",
-    image: "https://raw.githubusercontent.com/koelho2000/K/APOIO/IMAGENS_EIA/Epis%C3%B3dio%201%20A%20Luz%20Certa%20PT-Cover.jpg",
+    image: "/IMAGENS_EIA/Episódio 1 A Luz Certa PT-Cover.jpg",
     youtubeId: "CkHk3qKle_A",
     youtubePlaylist: "https://www.youtube.com/playlist?list=PLHHMjSyJQeBCFjuuPaqrhqMic374sFIkG",
     images: [
-      "https://raw.githubusercontent.com/koelho2000/K/APOIO/IMAGENS_EIA/Epis%C3%B3dio%201%20A%20Luz%20Certa%20PT-Cover.jpg",
-      "https://raw.githubusercontent.com/koelho2000/K/APOIO/IMAGENS_EIA/%5BS1E2%5D%20Close%20the%20door%20PT-Cover.jpg",
-      "https://raw.githubusercontent.com/koelho2000/K/APOIO/IMAGENS_EIA/%5BS1E3%5D%20Smart%20Washes%20PT-Cover.jpg",
-      "https://raw.githubusercontent.com/koelho2000/K/APOIO/IMAGENS_EIA/%5BS1E4%5D%20-%20Cooking%20Efficiently%20(PT)-Cover.jpg",
-      "https://raw.githubusercontent.com/koelho2000/K/APOIO/IMAGENS_EIA/%5BS1E6%5D%20-%20Fresh%20Air,%20Energy%20Saved.jpg",
-      "https://raw.githubusercontent.com/koelho2000/K/APOIO/IMAGENS_EIA/Epis%C3%B3dio%207%20Build%20it%20Smart-Cover%2016-9.jpg",
-      "https://raw.githubusercontent.com/koelho2000/K/APOIO/IMAGENS_EIA/S1E8%20-%20Smart%20appliances.jpg",
-      "https://raw.githubusercontent.com/koelho2000/K/APOIO/IMAGENS_EIA/%5BS1E9%5D%20-%20Chasing%20the%20Sun-Cover.jpg",
-      "https://raw.githubusercontent.com/koelho2000/K/APOIO/IMAGENS_EIA/%5BS1E10%5D%20-%20The%20temple%20of%20energy-Cover.jpg"
+      "/IMAGENS_EIA/Episódio 1 A Luz Certa PT-Cover.jpg",
+      "/IMAGENS_EIA/[S1E2] Close the door PT-Cover.jpg",
+      "/IMAGENS_EIA/[S1E3] Smart Washes PT-Cover.jpg",
+      "/IMAGENS_EIA/[S1E4] - Cooking Efficiently (PT)-Cover.jpg",
+      "/IMAGENS_EIA/[S1E6] - Fresh Air, Energy Saved.jpg",
+      "/IMAGENS_EIA/Episódio 7 Build it Smart-Cover 16-9.jpg",
+      "/IMAGENS_EIA/S1E8 - Smart appliances.jpg",
+      "/IMAGENS_EIA/[S1E9] - Chasing the Sun-Cover.jpg",
+      "/IMAGENS_EIA/[S1E10] - The temple of energy-Cover.jpg"
     ]
   },
   {
@@ -94,9 +94,9 @@ function Hero({ containerRef }: { containerRef: RefObject<HTMLDivElement | null>
 function KBrothersVideo() {
   const mediaItems = [
     { type: 'video', src: "https://raw.githubusercontent.com/koelho2000/K/d3aa8933055bddd75a6d65547dd2c1405eb62827/The%20K%20-Brothers%20Logo%20Video%20preto%20fundo%20(video).mp4" },
-    { type: 'image', src: "https://raw.githubusercontent.com/koelho2000/K/APOIO/IMAGENS_K-BROTHERS/A%20Amizade%20video%20final-Cover.jpg" },
-    { type: 'image', src: "https://raw.githubusercontent.com/koelho2000/K/APOIO/IMAGENS_K-BROTHERS/buzinho%20a%20aventura-Cover.jpg" },
-    { type: 'image', src: "https://raw.githubusercontent.com/koelho2000/K/APOIO/IMAGENS_K-BROTHERS/ZUM-Cover.jpg" }
+    { type: 'image', src: "/IMAGENS_K-BROTHERS/A Amizade video final-Cover.jpg" },
+    { type: 'image', src: "/IMAGENS_K-BROTHERS/buzinho a aventura-Cover.jpg" },
+    { type: 'image', src: "/IMAGENS_K-BROTHERS/ZUM-Cover.jpg" }
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
