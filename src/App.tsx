@@ -42,12 +42,7 @@ const companies = [
     description: "Série educativa sobre eficiência energética e sustentabilidade. Descobre a energia do futuro com Sunny, Breezy e Splashy!",
     url: "https://www.eia.pt",
     image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&q=80&w=1600",
-    youtubeId: "CkHk3qKle_A",
-    videos: [
-      "/EIA APOIO/Cena 62 - telemovel.mp4",
-      "/EIA APOIO/Cena 63 - Secar Roupa.mp4",
-      "/logo EIA limpo e com background.mp4"
-    ]
+    youtubeId: "CkHk3qKle_A"
   },
   {
     id: "bigkoelho",
@@ -130,31 +125,35 @@ function Hero({ containerRef }: { containerRef: RefObject<HTMLDivElement | null>
 }
 
 function KBrothersVideo() {
-  const videos = [
-    "/APOIO_KBROTHERS/k-brothers-bg.mp4",
-    "/APOIO_KBROTHERS/Buzinho curta.mp4"
+  const images = [
+    "/IMAGENS_K-BROTHERS/A Amizade video final-Cover.jpg",
+    "/IMAGENS_K-BROTHERS/buzinho a aventura-Cover.jpg",
+    "/IMAGENS_K-BROTHERS/ZUM-Cover.jpg"
   ];
-  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="relative min-h-screen bg-black py-16 @md:py-24 flex flex-col items-center justify-center overflow-hidden border-t border-white/10">
-      {/* Background Video */}
+      {/* Background Images */}
       <div className="absolute inset-0 z-0 bg-black">
         <AnimatePresence mode="wait">
-          <motion.video 
-            key={videos[currentVideoIndex]}
-            autoPlay 
-            muted 
-            playsInline 
-            onEnded={() => setCurrentVideoIndex((prev) => (prev + 1) % videos.length)}
+          <motion.img 
+            key={images[currentImageIndex]}
+            src={images[currentImageIndex]}
+            alt="The K-Brothers"
             initial={{ opacity: 0 }}
-            animate={{ opacity: 0.3 }}
+            animate={{ opacity: 0.4 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1.5 }}
             className="absolute inset-0 w-full h-full object-cover"
-          >
-            <source src={videos[currentVideoIndex]} type="video/mp4" />
-          </motion.video>
+          />
         </AnimatePresence>
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black/50 to-black" />
       </div>
