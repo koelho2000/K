@@ -5,7 +5,8 @@ import {
   Monitor,
   ArrowUpRight,
   Play,
-  X
+  X,
+  Youtube
 } from "lucide-react";
 
 const companies = [
@@ -41,8 +42,20 @@ const companies = [
     subtitle: "Energy in Action",
     description: "Série educativa sobre eficiência energética e sustentabilidade. Descobre a energia do futuro com Sunny, Breezy e Splashy!",
     url: "https://www.eia.pt",
-    image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&q=80&w=1600",
-    youtubeId: "CkHk3qKle_A"
+    image: "/IMAGENS_EIA/Episódio 1 A Luz Certa PT-Cover.jpg",
+    youtubeId: "CkHk3qKle_A",
+    youtubePlaylist: "https://www.youtube.com/playlist?list=PLHHMjSyJQeBCFjuuPaqrhqMic374sFIkG",
+    images: [
+      "/IMAGENS_EIA/Episódio 1 A Luz Certa PT-Cover.jpg",
+      "/IMAGENS_EIA/[S1E2] Close the door PT-Cover.jpg",
+      "/IMAGENS_EIA/[S1E3] Smart Washes PT-Cover.jpg",
+      "/IMAGENS_EIA/[S1E4] - Cooking Efficiently (PT)-Cover.jpg",
+      "/IMAGENS_EIA/[S1E6] - Fresh Air, Energy Saved.jpg",
+      "/IMAGENS_EIA/Episódio 7 Build it Smart-Cover 16-9.jpg",
+      "/IMAGENS_EIA/S1E8 - Smart appliances.jpg",
+      "/IMAGENS_EIA/[S1E9] - Chasing the Sun-Cover.jpg",
+      "/IMAGENS_EIA/[S1E10] - The temple of energy-Cover.jpg"
+    ]
   },
   {
     id: "bigkoelho",
@@ -51,6 +64,7 @@ const companies = [
     description: "Estúdio criativo de modelação 3D de alta precisão, foto-realismo e animação. Transformamos conceitos em experiências visuais imersivas.",
     url: null,
     image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1600",
+    youtubePlaylist: "https://www.youtube.com/playlist?list=PLHHMjSyJQeBBGNl9dIn1VrLImEdc_1HnY"
   }
 ];
 
@@ -164,21 +178,32 @@ function KBrothersVideo() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, margin: "-10%" }}
           transition={{ duration: 0.8 }}
-          className="text-center"
+          className="text-center flex flex-col items-center"
         >
           <h2 className="text-[11cqw] @md:text-[8rem] font-display font-black text-white uppercase tracking-tighter leading-none mb-4 drop-shadow-2xl">
             The K-Brothers
           </h2>
-          <p className="text-[4.5cqw] @md:text-3xl text-gray-300 font-light max-w-3xl mx-auto drop-shadow-md">
+          <p className="text-[4.5cqw] @md:text-3xl text-gray-300 font-light max-w-3xl mx-auto drop-shadow-md mb-8">
             Filmes de Animação Digital com Conteúdo IA. A próxima geração de narrativas visuais.
           </p>
+          <motion.a 
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            href="https://www.youtube.com/playlist?list=PLHHMjSyJQeBBmOTRLOZ_BlQcc2PBzo3dJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 px-8 py-4 bg-red-600 hover:bg-red-700 text-white rounded-full font-bold uppercase tracking-wider transition-colors shadow-lg"
+          >
+            <Youtube className="w-6 h-6" />
+            <span>Ver Playlist no YouTube</span>
+          </motion.a>
         </motion.div>
       </div>
     </section>
   );
 }
 
-function CompanyCard({ company, index, containerRef }: { key?: string, company: { id: string, name: string, subtitle: string, description: string, url: string | null, image: string, images?: string[], videos?: string[], youtubeId?: string, videoBg?: string }, index: number, containerRef: RefObject<HTMLDivElement | null> }) {
+function CompanyCard({ company, index, containerRef }: { key?: string, company: { id: string, name: string, subtitle: string, description: string, url: string | null, image: string, images?: string[], videos?: string[], youtubeId?: string, youtubePlaylist?: string, videoBg?: string }, index: number, containerRef: RefObject<HTMLDivElement | null> }) {
   const ref = useRef<HTMLDivElement>(null);
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -285,7 +310,7 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
           </p>
         </div>
         
-        <div className="flex gap-4 self-start @md:self-auto mt-4 @md:mt-0">
+        <div className="flex flex-wrap gap-4 self-start @md:self-auto mt-4 @md:mt-0">
           {company.youtubeId && (
             <motion.button 
               whileHover={{ scale: 1.05 }}
@@ -296,6 +321,19 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
               <span className="font-bold text-[10px] @md:text-base uppercase tracking-wider">Vídeo</span>
               <Play className="w-5 h-5 @md:w-8 @md:h-8" />
             </motion.button>
+          )}
+          {company.youtubePlaylist && (
+            <motion.a 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              href={company.youtubePlaylist}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0 w-16 h-16 @md:w-32 @md:h-32 rounded-full bg-red-600 text-white flex flex-col items-center justify-center gap-1 @md:gap-2 hover:bg-red-700 transition-colors"
+            >
+              <span className="font-bold text-[10px] @md:text-base uppercase tracking-wider">Playlist</span>
+              <Youtube className="w-5 h-5 @md:w-8 @md:h-8" />
+            </motion.a>
           )}
           {company.url && (
             <motion.a 
