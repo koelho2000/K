@@ -68,33 +68,6 @@ const companies = [
   }
 ];
 
-function Marquee() {
-  return (
-    <div className="relative flex overflow-x-hidden bg-white text-black py-4 @md:py-6 border-y-4 @md:border-y-8 border-black z-20">
-      <motion.div
-        className="whitespace-nowrap flex gap-4 @md:gap-8 text-4xl @md:text-7xl font-display font-black uppercase tracking-tighter"
-        animate={{ x: ["0%", "-50%"] }}
-        transition={{ repeat: Infinity, ease: "linear", duration: 15 }}
-      >
-        {[...Array(4)].map((_, i) => (
-          <span key={i} className="flex items-center gap-4 @md:gap-8">
-            <span>KOELHO2000</span>
-            <span>•</span>
-            <span>K2000</span>
-            <span>•</span>
-            <span>EIA</span>
-            <span>•</span>
-            <span>BIGKOELHO</span>
-            <span>•</span>
-            <span>THE K-BROTHERS</span>
-            <span>•</span>
-          </span>
-        ))}
-      </motion.div>
-    </div>
-  );
-}
-
 function Hero({ containerRef }: { containerRef: RefObject<HTMLDivElement | null> }) {
   const { scrollYProgress } = useScroll({ container: containerRef });
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "80%"]);
@@ -109,31 +82,11 @@ function Hero({ containerRef }: { containerRef: RefObject<HTMLDivElement | null>
           loop 
           muted 
           playsInline 
-          className="w-full h-full object-cover opacity-50"
+          className="w-full h-full object-cover"
         >
-          <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4" />
+          <source src="https://raw.githubusercontent.com/koelho2000/K/c2a426af3f4ce3ca85ee35d53bc22f17470b0776/Banner%20K.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black/30" />
       </motion.div>
-
-      <div className="relative z-10 flex flex-col items-center justify-center w-full px-4 pointer-events-none">
-        <motion.h1 
-          initial={{ y: 100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="text-[35cqw] @md:text-[25cqw] leading-none font-display font-black text-white tracking-tighter mix-blend-overlay"
-        >
-          K
-        </motion.h1>
-        <motion.p
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="text-[6cqw] @md:text-5xl font-bold text-white uppercase tracking-widest mt-[-2cqw]"
-        >
-          Ecosystem
-        </motion.p>
-      </div>
     </section>
   );
 }
@@ -431,7 +384,6 @@ export default function App() {
           className={`overflow-y-auto overflow-x-hidden scroll-smooth ${isMobileView ? 'h-[calc(100vh-4rem)] rounded-[2.5rem]' : 'h-screen'}`}
         >
           <Hero containerRef={scrollContainerRef} />
-          <Marquee />
           
           <div className="flex flex-col">
             {companies.map((company, index) => (
@@ -440,8 +392,6 @@ export default function App() {
           </div>
 
           <KBrothersVideo />
-          
-          <Marquee />
 
           <footer className="bg-black text-white py-16 @md:py-24 text-center border-t border-white/10">
             <div className="container mx-auto px-6">
