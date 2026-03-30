@@ -1,8 +1,6 @@
 import { motion, useScroll, useTransform, AnimatePresence } from "motion/react";
 import { useRef, useState, useEffect, RefObject } from "react";
 import { 
-  Smartphone,
-  Monitor,
   ArrowUpRight,
   Play,
   X,
@@ -25,6 +23,29 @@ const companies = [
       "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1600"
     ],
     portfolio: [
+      {
+        type: 'mosaic',
+        images: [
+          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9397.jpg',
+          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9402.jpg',
+          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9433.jpg',
+          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9499.jpg',
+          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9517.jpg'
+        ],
+        desc: "IEFP Castelo Branco - Certificação Energética após obra (Classe B)"
+      },
+      {
+        type: 'mosaic',
+        images: [
+          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/Capa.jpg',
+          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9528.jpg',
+          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9535.jpg',
+          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9544.jpg',
+          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9548.jpg',
+          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9552.jpg'
+        ],
+        desc: "IEFP Seixal - Certificação Energética de edifício existente devoluto (Classe C)"
+      },
       {
         img: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&q=80&w=1600",
         desc: "EB1 de Ribafria - Certificação Energética"
@@ -99,7 +120,7 @@ const companies = [
       },
       {
         "url": "https://k-dataelect-50850505662.us-west1.run.app/",
-        "img": "https://raw.githubusercontent.com/koelho2000/K/43ca51cf4d3afd7336bd20121b0cae133979ab91/IMAGENS_NOVIDADES/K-DATAELECTANALYSE.jpeg",
+        "img": "https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/K2000/K2000_K-DATAELECTANALYSE.jpeg",
         "desc": "Ferramenta profissional de análise de telecontagem elétrica e geração de relatórios, agora com módulo de análise de integração de baterias."
       },
       {
@@ -169,7 +190,7 @@ const companies = [
     youtubePlaylist: "https://www.youtube.com/playlist?list=PLHHMjSyJQeBCFjuuPaqrhqMic374sFIkG",
     youtubeVideos: ['CkHk3qKle_A', 'B1F8Er1F6sc', 'GRcdf_OZZ20', 'axSu_LYZKIw', 'f321tNWXbVM', 'tGJEOlb_rj0', 'mfe_koaW6wY', '50cWuFnTF20', 'IR-KT26Plwo', 'ux7nVCk1HLA', '-78WqSJ5bEI'],
     images: [
-      "https://raw.githubusercontent.com/koelho2000/K/43ca51cf4d3afd7336bd20121b0cae133979ab91/IMAGENS_NOVIDADES/EIA_Livro.jpeg",
+      "https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/EIA/EIA_Livro.jpeg",
       "https://raw.githubusercontent.com/koelho2000/K/61376feeed3334a822f3a9aa0e89410d213b11e2/IMAGENS_EIA/Episódio 1 A Luz Certa PT-Cover.jpg",
       "https://raw.githubusercontent.com/koelho2000/K/61376feeed3334a822f3a9aa0e89410d213b11e2/IMAGENS_EIA/[S1E2] Close the door PT-Cover.jpg",
       "https://raw.githubusercontent.com/koelho2000/K/61376feeed3334a822f3a9aa0e89410d213b11e2/IMAGENS_EIA/[S1E3] Smart Washes PT-Cover.jpg",
@@ -224,9 +245,38 @@ function Hero({ containerRef }: { containerRef: RefObject<HTMLDivElement | null>
 function NewsSection() {
   const newsItems = [
     {
+      id: 9,
+      type: 'mosaic',
+      images: [
+        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9397.jpg',
+        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9402.jpg',
+        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9433.jpg',
+        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9499.jpg',
+        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9517.jpg'
+      ],
+      title: 'Certificação Energética IEFP Castelo Branco',
+      description: 'Certificação Energética após obra e com PCE de referência do edifício do IEFP de Castelo Branco com uma área de 1500m2 e classe B.',
+      date: 'Abril 2026'
+    },
+    {
+      id: 10,
+      type: 'mosaic',
+      images: [
+        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/Capa.jpg',
+        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9528.jpg',
+        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9535.jpg',
+        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9544.jpg',
+        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9548.jpg',
+        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9552.jpg'
+      ],
+      title: 'Certificação Energética IEFP Seixal',
+      description: 'Certificação Energética de edifício existente devoluto do edifício do IEFP do Seixal com uma área de 1500m2 e classe C.',
+      date: 'Abril 2026'
+    },
+    {
       id: 1,
       type: 'image',
-      src: 'https://raw.githubusercontent.com/koelho2000/K/43ca51cf4d3afd7336bd20121b0cae133979ab91/IMAGENS_NOVIDADES/K-DATAELECTANALYSE.jpeg',
+      src: 'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/K2000/K2000_K-DATAELECTANALYSE.jpeg',
       title: 'Atualização K-DATA ELECTANALYSE',
       description: 'Atualização da ferramenta de análise de telecontagem com novo módulo de análise de integração de baterias.',
       date: 'Abril 2026'
@@ -234,7 +284,7 @@ function NewsSection() {
     {
       id: 2,
       type: 'image',
-      src: 'https://raw.githubusercontent.com/koelho2000/K/43ca51cf4d3afd7336bd20121b0cae133979ab91/IMAGENS_NOVIDADES/EIA_Livro.jpeg',
+      src: 'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/EIA/EIA_Livro.jpeg',
       title: 'Energy In Action nas Escolas',
       description: 'Distribuição gratuita e apresentação do livro da EIA Energy In action nas escolas primárias. 2ª edição com 1000 exemplares.',
       date: 'Abril 2026'
@@ -242,13 +292,37 @@ function NewsSection() {
     {
       id: 3,
       type: 'video',
-      src: 'https://raw.githubusercontent.com/koelho2000/K/43ca51cf4d3afd7336bd20121b0cae133979ab91/IMAGENS_NOVIDADES/EIA_Livro_Gassy.mp4',
+      src: 'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/EIA/EIA_Livro_Gassy.mp4',
       title: 'O Caderno dos Super-Heróis da Energia!',
       description: 'Preparativos a todo o gás no armazém! 1000 exemplares prontos para chegar às mãos dos pequenos leitores.',
       date: 'Abril 2026'
     },
     {
+      id: 4,
+      type: 'video',
+      src: 'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/K-BROTHERS/K-BROTHERS_A%20Amizade%20video%20final%20(online-video-cutter.com).mp4',
+      title: 'The K-Brothers: A Amizade',
+      description: 'Novo vídeo de animação The K-Brothers explorando o tema da amizade com a nossa tecnologia de IA.',
+      date: 'Abril 2026'
+    },
+    {
       id: 5,
+      type: 'video',
+      src: 'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/K-BROTHERS/K-BROTHERS_ZUM%20(online-video-cutter.com).mp4',
+      title: 'The K-Brothers: ZUM',
+      description: 'Mais uma incrível aventura animada da série The K-Brothers.',
+      date: 'Abril 2026'
+    },
+    {
+      id: 6,
+      type: 'video',
+      src: 'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/K-BROTHERS/K-BROTHERS_buzinho%20a%20aventura%20(online-video-cutter.com).mp4',
+      title: 'The K-Brothers: Buzinho a Aventura',
+      description: 'Acompanhe o Buzinho nesta nova e emocionante aventura animada.',
+      date: 'Abril 2026'
+    },
+    {
+      id: 7,
       type: 'image',
       src: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1600',
       title: 'Nova Plataforma de Simulação',
@@ -256,7 +330,7 @@ function NewsSection() {
       date: '15 Maio 2026'
     },
     {
-      id: 6,
+      id: 8,
       type: 'image',
       src: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1600',
       title: 'Atualização K-AQSPRO',
@@ -303,6 +377,18 @@ function NewsSection() {
                   playsInline
                   className="absolute inset-0 w-full h-full object-cover opacity-60"
                 />
+              ) : newsItems[currentIndex].type === 'mosaic' ? (
+                <div className="absolute inset-0 w-full h-full grid grid-cols-2 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-1 opacity-60">
+                  {newsItems[currentIndex].images?.map((img, i) => (
+                    <img 
+                      key={i}
+                      src={img} 
+                      alt=""
+                      className="w-full h-full object-cover"
+                      referrerPolicy="no-referrer"
+                    />
+                  ))}
+                </div>
               ) : (
                 <img 
                   src={newsItems[currentIndex].src} 
@@ -454,7 +540,7 @@ function KBrothersVideo() {
           </motion.a>
 
           {youtubeVideos.length > 0 && (
-            <div className="w-full max-w-md relative rounded-xl overflow-hidden border border-white/10 group">
+            <div className="w-full max-w-5xl relative rounded-xl overflow-hidden border border-white/10 group">
               <AnimatePresence mode="wait">
                 <motion.button
                   key={youtubeVideos[currentYoutubeIndex]}
@@ -533,7 +619,7 @@ function KBrothersVideo() {
   );
 }
 
-function CompanyCard({ company, index, containerRef }: { key?: string, company: { id: string, name: string, subtitle: string, description: string, url: string | null, image: string, images?: string[], videos?: string[], youtubeId?: string, youtubePlaylist?: string, videoBg?: string, youtubeVideos?: string[], applications?: { url: string, img: string, desc: string }[], portfolio?: { img: string, desc: string }[] }, index: number, containerRef: RefObject<HTMLDivElement | null> }) {
+function CompanyCard({ company, index, containerRef }: { key?: string, company: { id: string, name: string, subtitle: string, description: string, url: string | null, image: string, images?: string[], videos?: string[], youtubeId?: string, youtubePlaylist?: string, videoBg?: string, youtubeVideos?: string[], applications?: { url: string, img: string, desc: string }[], portfolio?: { img?: string, images?: string[], type?: string, desc: string }[] }, index: number, containerRef: RefObject<HTMLDivElement | null> }) {
   const ref = useRef<HTMLDivElement>(null);
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [activeYoutubeId, setActiveYoutubeId] = useState<string | null>(null);
@@ -736,7 +822,7 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
           </div>
 
           {(company.youtubeVideos?.length || company.applications?.length || company.portfolio?.length) ? (
-            <div className="flex flex-col gap-6 w-full max-w-md">
+            <div className="flex flex-col gap-6 w-full @md:w-[350px] @lg:w-[500px] @xl:w-[650px] @2xl:w-[800px] max-w-full">
               {company.youtubeVideos && company.youtubeVideos.length > 0 && (
                 <div className="w-full relative rounded-xl overflow-hidden border border-white/10 group">
                   <AnimatePresence mode="wait">
@@ -855,20 +941,34 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
                 <div className="w-full relative rounded-xl overflow-hidden border border-white/10 group bg-black/40">
                   <AnimatePresence mode="wait">
                     <motion.div
-                      key={company.portfolio[currentPortfolioIndex].img}
+                      key={currentPortfolioIndex}
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.5 }}
-                      className="relative w-full aspect-video flex flex-col items-center justify-center p-0 text-center"
+                      className="relative w-full aspect-video overflow-hidden"
                     >
-                      <img 
-                        src={company.portfolio[currentPortfolioIndex].img} 
-                        alt={company.portfolio[currentPortfolioIndex].desc} 
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                        referrerPolicy="no-referrer"
-                      />
-                      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-4 pt-12">
+                      {company.portfolio[currentPortfolioIndex].type === 'mosaic' ? (
+                        <div className="absolute inset-0 w-full h-full grid grid-cols-2 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-1">
+                          {company.portfolio[currentPortfolioIndex].images?.map((img, i) => (
+                            <img 
+                              key={i}
+                              src={img} 
+                              alt=""
+                              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                              referrerPolicy="no-referrer"
+                            />
+                          ))}
+                        </div>
+                      ) : (
+                        <img 
+                          src={company.portfolio[currentPortfolioIndex].img} 
+                          alt={company.portfolio[currentPortfolioIndex].desc} 
+                          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          referrerPolicy="no-referrer"
+                        />
+                      )}
+                      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-4 pt-12 text-center">
                         <p className="text-sm @md:text-base text-white font-medium drop-shadow-md">
                           {company.portfolio[currentPortfolioIndex].desc}
                         </p>
@@ -935,37 +1035,25 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
   );
 }
 
-function Navigation({ isMobileView, setIsMobileView }: { isMobileView: boolean, setIsMobileView: (v: boolean) => void }) {
+function Navigation() {
   return (
     <nav className="absolute top-0 left-0 right-0 z-50 px-4 @md:px-6 py-4 @md:py-6 flex justify-between items-center mix-blend-difference text-white">
       <div className="text-3xl @md:text-4xl font-display font-black tracking-tighter">K</div>
-      
-      <button
-        onClick={() => setIsMobileView(!isMobileView)}
-        className="flex items-center gap-2 px-4 py-2 @md:px-6 @md:py-3 rounded-full bg-white text-black hover:bg-gray-200 transition-colors"
-        title="Alternar vista Desktop/Mobile"
-      >
-        {isMobileView ? <Monitor className="w-4 h-4 @md:w-5 @md:h-5" /> : <Smartphone className="w-4 h-4 @md:w-5 @md:h-5" />}
-        <span className="text-xs @md:text-sm font-bold uppercase tracking-wider hidden @md:inline">
-          {isMobileView ? "Desktop" : "Mobile"}
-        </span>
-      </button>
     </nav>
   );
 }
 
 export default function App() {
-  const [isMobileView, setIsMobileView] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   return (
     <div className="bg-neutral-900 min-h-screen font-sans selection:bg-white selection:text-black flex justify-center">
-      <div className={`w-full transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] relative bg-black @container ${isMobileView ? 'max-w-[400px] border-x-8 border-neutral-800 shadow-2xl overflow-x-hidden my-8 rounded-[3rem]' : ''}`}>
-        <Navigation isMobileView={isMobileView} setIsMobileView={setIsMobileView} />
+      <div className="w-full transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] relative bg-black @container">
+        <Navigation />
         
         <div 
           ref={scrollContainerRef} 
-          className={`overflow-y-auto overflow-x-hidden scroll-smooth ${isMobileView ? 'h-[calc(100vh-4rem)] rounded-[2.5rem]' : 'h-screen'}`}
+          className="overflow-y-auto overflow-x-hidden scroll-smooth h-screen"
         >
           <Hero containerRef={scrollContainerRef} />
           
