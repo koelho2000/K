@@ -42,19 +42,19 @@ const companies = [
     subtitle: "Energy in Action",
     description: "Série educativa sobre eficiência energética e sustentabilidade. Descobre a energia do futuro com Sunny, Breezy e Splashy!",
     url: "https://www.eia.pt",
-    image: "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/Epis%C3%B3dio%201%20A%20Luz%20Certa%20PT-Cover.jpg",
+    image: "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/Episódio 1 A Luz Certa PT-Cover.jpg",
     youtubeId: "CkHk3qKle_A",
     youtubePlaylist: "https://www.youtube.com/playlist?list=PLHHMjSyJQeBCFjuuPaqrhqMic374sFIkG",
     images: [
-      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/Epis%C3%B3dio%201%20A%20Luz%20Certa%20PT-Cover.jpg",
-      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/%5BS1E2%5D%20Close%20the%20door%20PT-Cover.jpg",
-      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/%5BS1E3%5D%20Smart%20Washes%20PT-Cover.jpg",
-      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/%5BS1E4%5D%20-%20Cooking%20Efficiently%20(PT)-Cover.jpg",
-      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/%5BS1E6%5D%20-%20Fresh%20Air,%20Energy%20Saved.jpg",
-      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/Epis%C3%B3dio%207%20Build%20it%20Smart-Cover%2016-9.jpg",
-      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/S1E8%20-%20Smart%20appliances.jpg",
-      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/%5BS1E9%5D%20-%20Chasing%20the%20Sun-Cover.jpg",
-      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/%5BS1E10%5D%20-%20The%20temple%20of%20energy-Cover.jpg"
+      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/Episódio 1 A Luz Certa PT-Cover.jpg",
+      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/[S1E2] Close the door PT-Cover.jpg",
+      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/[S1E3] Smart Washes PT-Cover.jpg",
+      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/[S1E4] - Cooking Efficiently (PT)-Cover.jpg",
+      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/[S1E6] - Fresh Air, Energy Saved.jpg",
+      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/Episódio 7 Build it Smart-Cover 16-9.jpg",
+      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/S1E8 - Smart appliances.jpg",
+      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/[S1E9] - Chasing the Sun-Cover.jpg",
+      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/[S1E10] - The temple of energy-Cover.jpg"
     ]
   },
   {
@@ -84,7 +84,7 @@ function Hero({ containerRef }: { containerRef: RefObject<HTMLDivElement | null>
           playsInline 
           className="w-full h-full object-cover"
         >
-          <source src="https://cdn.jsdelivr.net/gh/koelho2000/K@c2a426af3f4ce3ca85ee35d53bc22f17470b0776/Banner%20K.mp4" type="video/mp4" />
+          <source src="https://cdn.jsdelivr.net/gh/koelho2000/K@c2a426af3f4ce3ca85ee35d53bc22f17470b0776/Banner K.mp4" type="video/mp4" />
         </video>
       </motion.div>
     </section>
@@ -93,9 +93,9 @@ function Hero({ containerRef }: { containerRef: RefObject<HTMLDivElement | null>
 
 function KBrothersVideo() {
   const mediaItems = [
-    { type: 'video', src: "https://cdn.jsdelivr.net/gh/koelho2000/K@d3aa8933055bddd75a6d65547dd2c1405eb62827/The%20K%20-Brothers%20Logo%20Video%20preto%20fundo%20(video).mp4" },
-    { type: 'image', src: "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_K-BROTHERS/A%20Amizade%20video%20final-Cover.jpg" },
-    { type: 'image', src: "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_K-BROTHERS/buzinho%20a%20aventura-Cover.jpg" },
+    { type: 'video', src: "https://cdn.jsdelivr.net/gh/koelho2000/K@d3aa8933055bddd75a6d65547dd2c1405eb62827/The K -Brothers Logo Video preto fundo (video).mp4" },
+    { type: 'image', src: "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_K-BROTHERS/A Amizade video final-Cover.jpg" },
+    { type: 'image', src: "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_K-BROTHERS/buzinho a aventura-Cover.jpg" },
     { type: 'image', src: "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_K-BROTHERS/ZUM-Cover.jpg" }
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -116,15 +116,11 @@ function KBrothersVideo() {
       <div className="absolute inset-0 z-0 bg-black">
         <AnimatePresence mode="wait">
           {mediaItems[currentIndex].type === 'image' ? (
-            <motion.img 
+            <img 
               key={mediaItems[currentIndex].src}
               src={mediaItems[currentIndex].src}
               alt="The K-Brothers"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.4 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1.5 }}
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover opacity-40 transition-opacity duration-1000"
             />
           ) : (
             <motion.video
@@ -243,28 +239,19 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
         ) : company.images && company.images.length > 0 ? (
           <div className="absolute inset-0 w-full h-full opacity-40 group-hover:opacity-60 transition-opacity duration-700">
             {company.images.map((img, i) => (
-              <motion.img 
+              <img 
                 key={img}
-                style={{ y }}
-                initial={false}
-                animate={{ opacity: i === currentImageIndex ? 1 : 0 }}
-                transition={{ duration: 1.5, ease: "easeInOut" }}
                 src={img} 
                 alt={`${company.name} - Imagem ${i + 1}`}
-                className="absolute inset-0 w-full h-[130%] object-cover origin-center"
-                referrerPolicy="no-referrer"
+                className={`absolute inset-0 w-full h-full object-cover origin-center transition-opacity duration-1000 ${i === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
               />
             ))}
           </div>
         ) : (
-          <motion.img 
-            style={{ y }}
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
+          <img 
             src={company.image} 
             alt={company.name}
-            className="w-full h-[130%] object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-700 origin-center"
-            referrerPolicy="no-referrer"
+            className="w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-700 origin-center"
           />
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
