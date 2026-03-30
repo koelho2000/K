@@ -889,7 +889,7 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
                       rel="noopener noreferrer"
                       className="relative w-full aspect-video flex flex-col items-center justify-center p-6 text-center hover:bg-white/5 transition-colors"
                     >
-                      <div className="h-24 w-auto mb-4 flex items-center justify-center">
+                      <div className="h-24 @md:h-32 @lg:h-48 @xl:h-56 w-auto mb-4 @md:mb-6 flex items-center justify-center">
                         <img 
                           src={company.applications[currentAppIndex].img} 
                           alt="App Logo" 
@@ -897,7 +897,7 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
                           referrerPolicy="no-referrer"
                         />
                       </div>
-                      <p className="text-sm @md:text-base text-gray-300 line-clamp-3">
+                      <p className="text-sm @md:text-base @lg:text-lg text-gray-300 line-clamp-3">
                         {company.applications[currentAppIndex].desc}
                       </p>
                       <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
