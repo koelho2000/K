@@ -42,19 +42,19 @@ const companies = [
     subtitle: "Energy in Action",
     description: "Série educativa sobre eficiência energética e sustentabilidade. Descobre a energia do futuro com Sunny, Breezy e Splashy!",
     url: "https://www.eia.pt",
-    image: "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/Episódio 1 A Luz Certa PT-Cover.jpg",
+    image: "https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_EIA/Episódio 1 A Luz Certa PT-Cover.jpg",
     youtubeId: "CkHk3qKle_A",
     youtubePlaylist: "https://www.youtube.com/playlist?list=PLHHMjSyJQeBCFjuuPaqrhqMic374sFIkG",
     images: [
-      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/Episódio 1 A Luz Certa PT-Cover.jpg",
-      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/[S1E2] Close the door PT-Cover.jpg",
-      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/[S1E3] Smart Washes PT-Cover.jpg",
-      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/[S1E4] - Cooking Efficiently (PT)-Cover.jpg",
-      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/[S1E6] - Fresh Air, Energy Saved.jpg",
-      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/Episódio 7 Build it Smart-Cover 16-9.jpg",
-      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/S1E8 - Smart appliances.jpg",
-      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/[S1E9] - Chasing the Sun-Cover.jpg",
-      "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_EIA/[S1E10] - The temple of energy-Cover.jpg"
+      "https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_EIA/Episódio 1 A Luz Certa PT-Cover.jpg",
+      "https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_EIA/[S1E2] Close the door PT-Cover.jpg",
+      "https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_EIA/[S1E3] Smart Washes PT-Cover.jpg",
+      "https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_EIA/[S1E4] - Cooking Efficiently (PT)-Cover.jpg",
+      "https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_EIA/[S1E6] - Fresh Air, Energy Saved.jpg",
+      "https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_EIA/Episódio 7 Build it Smart-Cover 16-9.jpg",
+      "https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_EIA/S1E8 - Smart appliances.jpg",
+      "https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_EIA/[S1E9] - Chasing the Sun-Cover.jpg",
+      "https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_EIA/[S1E10] - The temple of energy-Cover.jpg"
     ]
   },
   {
@@ -84,7 +84,7 @@ function Hero({ containerRef }: { containerRef: RefObject<HTMLDivElement | null>
           playsInline 
           className="w-full h-full object-cover"
         >
-          <source src="https://cdn.jsdelivr.net/gh/koelho2000/K@c2a426af3f4ce3ca85ee35d53bc22f17470b0776/Banner K.mp4" type="video/mp4" />
+          <source src="https://raw.githubusercontent.com/koelho2000/K/c2a426af3f4ce3ca85ee35d53bc22f17470b0776/Banner K.mp4" type="video/mp4" />
         </video>
       </motion.div>
     </section>
@@ -93,10 +93,10 @@ function Hero({ containerRef }: { containerRef: RefObject<HTMLDivElement | null>
 
 function KBrothersVideo() {
   const mediaItems = [
-    { type: 'video', src: "https://cdn.jsdelivr.net/gh/koelho2000/K@d3aa8933055bddd75a6d65547dd2c1405eb62827/The K -Brothers Logo Video preto fundo (video).mp4" },
-    { type: 'image', src: "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_K-BROTHERS/A Amizade video final-Cover.jpg" },
-    { type: 'image', src: "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_K-BROTHERS/buzinho a aventura-Cover.jpg" },
-    { type: 'image', src: "https://cdn.jsdelivr.net/gh/koelho2000/K@main/IMAGENS_K-BROTHERS/ZUM-Cover.jpg" }
+    { type: 'video', src: "https://raw.githubusercontent.com/koelho2000/K/d3aa8933055bddd75a6d65547dd2c1405eb62827/The K -Brothers Logo Video preto fundo (video).mp4" },
+    { type: 'image', src: "https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_K-BROTHERS/A Amizade video final-Cover.jpg" },
+    { type: 'image', src: "https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_K-BROTHERS/buzinho a aventura-Cover.jpg" },
+    { type: 'image', src: "https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_K-BROTHERS/ZUM-Cover.jpg" }
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
