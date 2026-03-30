@@ -26,23 +26,23 @@ const companies = [
       {
         type: 'mosaic',
         images: [
-          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9397.jpg',
-          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9402.jpg',
-          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9433.jpg',
-          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9499.jpg',
-          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9517.jpg'
+          'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9397.jpg',
+          'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9402.jpg',
+          'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9433.jpg',
+          'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9499.jpg',
+          'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9517.jpg'
         ],
         desc: "IEFP Castelo Branco - Certificação Energética após obra (Classe B)"
       },
       {
         type: 'mosaic',
         images: [
-          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/Capa.jpg',
-          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9528.jpg',
-          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9535.jpg',
-          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9544.jpg',
-          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9548.jpg',
-          'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9552.jpg'
+          'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/Capa.jpg',
+          'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9528.jpg',
+          'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9535.jpg',
+          'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9544.jpg',
+          'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9548.jpg',
+          'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9552.jpg'
         ],
         desc: "IEFP Seixal - Certificação Energética de edifício existente devoluto (Classe C)"
       },
@@ -120,7 +120,7 @@ const companies = [
       },
       {
         "url": "https://k-dataelect-50850505662.us-west1.run.app/",
-        "img": "https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/K2000/K2000_K-DATAELECTANALYSE.jpeg",
+        "img": "https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/K2000/K2000_K-DATAELECTANALYSE.jpeg",
         "desc": "Ferramenta profissional de análise de telecontagem elétrica e geração de relatórios, agora com módulo de análise de integração de baterias."
       },
       {
@@ -190,7 +190,7 @@ const companies = [
     youtubePlaylist: "https://www.youtube.com/playlist?list=PLHHMjSyJQeBCFjuuPaqrhqMic374sFIkG",
     youtubeVideos: ['CkHk3qKle_A', 'B1F8Er1F6sc', 'GRcdf_OZZ20', 'axSu_LYZKIw', 'f321tNWXbVM', 'tGJEOlb_rj0', 'mfe_koaW6wY', '50cWuFnTF20', 'IR-KT26Plwo', 'ux7nVCk1HLA', '-78WqSJ5bEI'],
     images: [
-      "https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/EIA/EIA_Livro.jpeg",
+      "https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/EIA/EIA_Livro.jpeg",
       "https://raw.githubusercontent.com/koelho2000/K/61376feeed3334a822f3a9aa0e89410d213b11e2/IMAGENS_EIA/Episódio 1 A Luz Certa PT-Cover.jpg",
       "https://raw.githubusercontent.com/koelho2000/K/61376feeed3334a822f3a9aa0e89410d213b11e2/IMAGENS_EIA/[S1E2] Close the door PT-Cover.jpg",
       "https://raw.githubusercontent.com/koelho2000/K/61376feeed3334a822f3a9aa0e89410d213b11e2/IMAGENS_EIA/[S1E3] Smart Washes PT-Cover.jpg",
@@ -248,11 +248,11 @@ function NewsSection() {
       id: 9,
       type: 'mosaic',
       images: [
-        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9397.jpg',
-        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9402.jpg',
-        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9433.jpg',
-        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9499.jpg',
-        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9517.jpg'
+        'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9397.jpg',
+        'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9402.jpg',
+        'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9433.jpg',
+        'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9499.jpg',
+        'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Castelo%20Branco/IMG_9517.jpg'
       ],
       title: 'Certificação Energética IEFP Castelo Branco',
       description: 'Certificação Energética após obra e com PCE de referência do edifício do IEFP de Castelo Branco com uma área de 1500m2 e classe B.',
@@ -262,12 +262,12 @@ function NewsSection() {
       id: 10,
       type: 'mosaic',
       images: [
-        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/Capa.jpg',
-        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9528.jpg',
-        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9535.jpg',
-        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9544.jpg',
-        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9548.jpg',
-        'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9552.jpg'
+        'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/Capa.jpg',
+        'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9528.jpg',
+        'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9535.jpg',
+        'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9544.jpg',
+        'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9548.jpg',
+        'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/KOELHO2000/IEFP%20Seixal/IMG_9552.jpg'
       ],
       title: 'Certificação Energética IEFP Seixal',
       description: 'Certificação Energética de edifício existente devoluto do edifício do IEFP do Seixal com uma área de 1500m2 e classe C.',
@@ -276,7 +276,7 @@ function NewsSection() {
     {
       id: 1,
       type: 'image',
-      src: 'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/K2000/K2000_K-DATAELECTANALYSE.jpeg',
+      src: 'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/K2000/K2000_K-DATAELECTANALYSE.jpeg',
       title: 'Atualização K-DATA ELECTANALYSE',
       description: 'Atualização da ferramenta de análise de telecontagem com novo módulo de análise de integração de baterias.',
       date: 'Abril 2026'
@@ -284,7 +284,7 @@ function NewsSection() {
     {
       id: 2,
       type: 'image',
-      src: 'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/EIA/EIA_Livro.jpeg',
+      src: 'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/EIA/EIA_Livro.jpeg',
       title: 'Energy In Action nas Escolas',
       description: 'Distribuição gratuita e apresentação do livro da EIA Energy In action nas escolas primárias. 2ª edição com 1000 exemplares.',
       date: 'Abril 2026'
@@ -292,7 +292,7 @@ function NewsSection() {
     {
       id: 3,
       type: 'video',
-      src: 'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/EIA/EIA_Livro_Gassy.mp4',
+      src: 'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/EIA/EIA_Livro_Gassy.mp4',
       title: 'O Caderno dos Super-Heróis da Energia!',
       description: 'Preparativos a todo o gás no armazém! 1000 exemplares prontos para chegar às mãos dos pequenos leitores.',
       date: 'Abril 2026'
@@ -300,7 +300,7 @@ function NewsSection() {
     {
       id: 4,
       type: 'video',
-      src: 'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/K-BROTHERS/K-BROTHERS_A%20Amizade%20video%20final%20(online-video-cutter.com).mp4',
+      src: 'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/K-BROTHERS/K-BROTHERS_A%20Amizade%20video%20final%20(online-video-cutter.com).mp4',
       title: 'The K-Brothers: A Amizade',
       description: 'Novo vídeo de animação The K-Brothers explorando o tema da amizade com a nossa tecnologia de IA.',
       date: 'Abril 2026'
@@ -308,7 +308,7 @@ function NewsSection() {
     {
       id: 5,
       type: 'video',
-      src: 'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/K-BROTHERS/K-BROTHERS_ZUM%20(online-video-cutter.com).mp4',
+      src: 'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/K-BROTHERS/K-BROTHERS_ZUM%20(online-video-cutter.com).mp4',
       title: 'The K-Brothers: ZUM',
       description: 'Mais uma incrível aventura animada da série The K-Brothers.',
       date: 'Abril 2026'
@@ -316,7 +316,7 @@ function NewsSection() {
     {
       id: 6,
       type: 'video',
-      src: 'https://raw.githubusercontent.com/koelho2000/K/main/IMAGENS_NOVIDADES/K-BROTHERS/K-BROTHERS_buzinho%20a%20aventura%20(online-video-cutter.com).mp4',
+      src: 'https://raw.githubusercontent.com/koelho2000/K/8c485c8cf0d536d6fa8aed9b1ba1f7c8775934ae/IMAGENS_NOVIDADES/K-BROTHERS/K-BROTHERS_buzinho%20a%20aventura%20(online-video-cutter.com).mp4',
       title: 'The K-Brothers: Buzinho a Aventura',
       description: 'Acompanhe o Buzinho nesta nova e emocionante aventura animada.',
       date: 'Abril 2026'
@@ -366,7 +366,7 @@ function NewsSection() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
-              className="relative aspect-video md:aspect-[21/9] w-full flex items-center justify-center bg-black"
+              className="relative aspect-square md:aspect-[16/9] lg:aspect-[21/9] w-full flex items-center justify-center bg-black"
             >
               {newsItems[currentIndex].type === 'video' ? (
                 <video 
@@ -946,7 +946,7 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.5 }}
-                      className="relative w-full aspect-video overflow-hidden"
+                      className="relative w-full aspect-square md:aspect-[16/9] lg:aspect-[21/9] overflow-hidden"
                     >
                       {company.portfolio[currentPortfolioIndex].type === 'mosaic' ? (
                         <div className="absolute inset-0 w-full h-full grid grid-cols-2 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-1">
