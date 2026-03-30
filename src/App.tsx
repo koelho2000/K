@@ -18,11 +18,45 @@ const companies = [
     subtitle: "Engenharia & Climatização",
     description: "Especialistas em Ar Condicionado, Projeto AVAC e RECS, Certificação Energética e Auditorias. Simulação energética aliada à modelação 3D.",
     url: "https://www.koelho2000.com",
-    image: "https://images.unsplash.com/photo-1581094288338-2314dddb31b5?auto=format&fit=crop&q=80&w=1600",
+    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=1600",
     images: [
-      "https://images.unsplash.com/photo-1581094288338-2314dddb31b5?auto=format&fit=crop&q=80&w=1600",
+      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=1600",
       "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1600",
       "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1600"
+    ],
+    portfolio: [
+      {
+        img: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&q=80&w=1600",
+        desc: "EB1 de Ribafria - Certificação Energética"
+      },
+      {
+        img: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1600",
+        desc: "Lar Oliveira do Conde - Certificação Energética"
+      },
+      {
+        img: "https://images.unsplash.com/photo-1534723452862-4c874018d66d?auto=format&fit=crop&q=80&w=1600",
+        desc: "Intermarche Moncarapacho - Certificação Energética"
+      },
+      {
+        img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1600",
+        desc: "Entreposto Nissan Expo - Certificação Energética"
+      },
+      {
+        img: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1600",
+        desc: "IPO Porto - Certificação Energética"
+      },
+      {
+        img: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1600",
+        desc: "Kidzania DV Tejo - Certificação Energética"
+      },
+      {
+        img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1600",
+        desc: "Edifício Vodafone Expo - Certificação Energética"
+      },
+      {
+        img: "https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&q=80&w=1600",
+        desc: "Banco de Portugal - Certificação Energética"
+      }
     ]
   },
   {
@@ -31,7 +65,7 @@ const companies = [
     subtitle: "Aplicações de Engenharia",
     description: "Plataformas profissionais e ferramentas avançadas. Orçamentação com AI, simulação AQS e fotovoltaica, e apps para cinema de animação.",
     url: "https://www.k2000.pt",
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1600",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1600",
     applications: [
       {
         "url": "https://k-boqproai-50850505662.us-west1.run.app/",
@@ -122,7 +156,7 @@ const companies = [
     images: [
       "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1600",
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1600",
-      "https://images.unsplash.com/photo-1507238692062-548b2cb5d881?auto=format&fit=crop&q=80&w=1600"
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1600"
     ]
   },
   {
@@ -153,7 +187,13 @@ const companies = [
     description: "Estúdio criativo de modelação 3D de alta precisão, foto-realismo e animação. Transformamos conceitos em experiências visuais imersivas.",
     url: null,
     image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1600",
-    youtubePlaylist: "https://www.youtube.com/playlist?list=PLHHMjSyJQeBBGNl9dIn1VrLImEdc_1HnY"
+    youtubePlaylist: "https://www.youtube.com/playlist?list=PLHHMjSyJQeBBGNl9dIn1VrLImEdc_1HnY",
+    images: [
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1600",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1600",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1600",
+      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1600"
+    ]
   }
 ];
 
@@ -231,6 +271,7 @@ function KBrothersVideo() {
               src={mediaItems[currentIndex].src}
               alt="The K-Brothers"
               className="absolute inset-0 w-full h-full object-cover opacity-40 transition-opacity duration-1000"
+              referrerPolicy="no-referrer"
             />
           ) : (
             <motion.video
@@ -293,6 +334,7 @@ function KBrothersVideo() {
                     src={`https://img.youtube.com/vi/${youtubeVideos[currentYoutubeIndex]}/mqdefault.jpg`} 
                     alt="Video thumbnail" 
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <Play className="w-12 h-12 text-white" />
@@ -356,7 +398,7 @@ function KBrothersVideo() {
   );
 }
 
-function CompanyCard({ company, index, containerRef }: { key?: string, company: { id: string, name: string, subtitle: string, description: string, url: string | null, image: string, images?: string[], videos?: string[], youtubeId?: string, youtubePlaylist?: string, videoBg?: string, youtubeVideos?: string[], applications?: { url: string, img: string, desc: string }[] }, index: number, containerRef: RefObject<HTMLDivElement | null> }) {
+function CompanyCard({ company, index, containerRef }: { key?: string, company: { id: string, name: string, subtitle: string, description: string, url: string | null, image: string, images?: string[], videos?: string[], youtubeId?: string, youtubePlaylist?: string, videoBg?: string, youtubeVideos?: string[], applications?: { url: string, img: string, desc: string }[], portfolio?: { img: string, desc: string }[] }, index: number, containerRef: RefObject<HTMLDivElement | null> }) {
   const ref = useRef<HTMLDivElement>(null);
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [activeYoutubeId, setActiveYoutubeId] = useState<string | null>(null);
@@ -364,6 +406,7 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const [currentYoutubeIndex, setCurrentYoutubeIndex] = useState(0);
   const [currentAppIndex, setCurrentAppIndex] = useState(0);
+  const [currentPortfolioIndex, setCurrentPortfolioIndex] = useState(0);
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -399,6 +442,15 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
     }
   }, [company.applications]);
 
+  useEffect(() => {
+    if (company.portfolio && company.portfolio.length > 1) {
+      const interval = setInterval(() => {
+        setCurrentPortfolioIndex((prev) => (prev + 1) % company.portfolio!.length);
+      }, 5000);
+      return () => clearInterval(interval);
+    }
+  }, [company.portfolio]);
+
   const nextYoutubeVideo = () => {
     if (!company.youtubeVideos) return;
     setCurrentYoutubeIndex((prev) => (prev + 1) % company.youtubeVideos!.length);
@@ -417,6 +469,16 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
   const prevApp = () => {
     if (!company.applications) return;
     setCurrentAppIndex((prev) => (prev - 1 + company.applications!.length) % company.applications!.length);
+  };
+
+  const nextPortfolio = () => {
+    if (!company.portfolio) return;
+    setCurrentPortfolioIndex((prev) => (prev + 1) % company.portfolio!.length);
+  };
+
+  const prevPortfolio = () => {
+    if (!company.portfolio) return;
+    setCurrentPortfolioIndex((prev) => (prev - 1 + company.portfolio!.length) % company.portfolio!.length);
   };
 
   return (
@@ -469,6 +531,7 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
                 src={img} 
                 alt={`${company.name} - Imagem ${i + 1}`}
                 className={`absolute inset-0 w-full h-full object-cover origin-center transition-opacity duration-1000 ${i === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
+                referrerPolicy="no-referrer"
               />
             ))}
           </div>
@@ -477,6 +540,7 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
             src={company.image} 
             alt={company.name}
             className="w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-700 origin-center"
+            referrerPolicy="no-referrer"
           />
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
@@ -536,7 +600,7 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
             )}
           </div>
 
-          {(company.youtubeVideos?.length || company.applications?.length) ? (
+          {(company.youtubeVideos?.length || company.applications?.length || company.portfolio?.length) ? (
             <div className="flex flex-col gap-6 w-full max-w-md">
               {company.youtubeVideos && company.youtubeVideos.length > 0 && (
                 <div className="w-full relative rounded-xl overflow-hidden border border-white/10 group">
@@ -554,6 +618,7 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
                         src={`https://img.youtube.com/vi/${company.youtubeVideos[currentYoutubeIndex]}/mqdefault.jpg`} 
                         alt="Video thumbnail" 
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        referrerPolicy="no-referrer"
                       />
                       <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <Play className="w-12 h-12 text-white" />
@@ -608,6 +673,7 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
                           src={company.applications[currentAppIndex].img} 
                           alt="App Logo" 
                           className="max-h-full max-w-full object-contain drop-shadow-lg"
+                          referrerPolicy="no-referrer"
                         />
                       </div>
                       <p className="text-sm @md:text-base text-gray-300 line-clamp-3">
@@ -642,6 +708,59 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
                           <div 
                             key={idx} 
                             className={`w-1.5 h-1.5 rounded-full transition-colors ${idx === currentAppIndex ? 'bg-red-600' : 'bg-white/30'}`}
+                          />
+                        ))}
+                      </div>
+                    </>
+                  )}
+                </div>
+              )}
+
+              {company.portfolio && company.portfolio.length > 0 && (
+                <div className="w-full relative rounded-xl overflow-hidden border border-white/10 group bg-black/40">
+                  <AnimatePresence mode="wait">
+                    <motion.div
+                      key={company.portfolio[currentPortfolioIndex].img}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.5 }}
+                      className="relative w-full aspect-video flex flex-col items-center justify-center p-0 text-center"
+                    >
+                      <img 
+                        src={company.portfolio[currentPortfolioIndex].img} 
+                        alt={company.portfolio[currentPortfolioIndex].desc} 
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        referrerPolicy="no-referrer"
+                      />
+                      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-4 pt-12">
+                        <p className="text-sm @md:text-base text-white font-medium drop-shadow-md">
+                          {company.portfolio[currentPortfolioIndex].desc}
+                        </p>
+                      </div>
+                    </motion.div>
+                  </AnimatePresence>
+                  
+                  {company.portfolio.length > 1 && (
+                    <>
+                      <button 
+                        onClick={(e) => { e.preventDefault(); e.stopPropagation(); prevPortfolio(); }}
+                        className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white hover:bg-black/80 transition-colors z-10"
+                      >
+                        <ChevronLeft className="w-5 h-5" />
+                      </button>
+                      <button 
+                        onClick={(e) => { e.preventDefault(); e.stopPropagation(); nextPortfolio(); }}
+                        className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white hover:bg-black/80 transition-colors z-10"
+                      >
+                        <ChevronRight className="w-5 h-5" />
+                      </button>
+
+                      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex flex-wrap justify-center gap-1.5 z-10 px-4 w-full">
+                        {company.portfolio.map((_, idx) => (
+                          <div 
+                            key={idx} 
+                            className={`w-2 h-2 rounded-full transition-colors ${idx === currentPortfolioIndex ? 'bg-red-600' : 'bg-white/50'}`}
                           />
                         ))}
                       </div>
