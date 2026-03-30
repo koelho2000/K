@@ -6,7 +6,9 @@ import {
   ArrowUpRight,
   Play,
   X,
-  Youtube
+  Youtube,
+  ChevronLeft,
+  ChevronRight
 } from "lucide-react";
 
 const companies = [
@@ -30,6 +32,93 @@ const companies = [
     description: "Plataformas profissionais e ferramentas avançadas. Orçamentação com AI, simulação AQS e fotovoltaica, e apps para cinema de animação.",
     url: "https://www.k2000.pt",
     image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1600",
+    applications: [
+      {
+        "url": "https://k-boqproai-50850505662.us-west1.run.app/",
+        "img": "https://af822648e7.clvaw-cdnwnd.com/ebf04d199ab717981e71d4116475e828/200000003-7876378765/BOQPROAI.gif?ph=af822648e7",
+        "desc": "Criação de orçamentação profissional com tecnologia AI e gravação em CLOUD"
+      },
+      {
+        "url": "https://k-aqspro-50850505662.us-west1.run.app/",
+        "img": "https://af822648e7.clvaw-cdnwnd.com/ebf04d199ab717981e71d4116475e828/200000004-2516b2516d/Logo%20K-AQSPRO.gif?ph=af822648e7",
+        "desc": "A plataforma profissional para projeto, simulação e otimização de sistemas de Águas Quentes Sanitárias (AQS)"
+      },
+      {
+        "url": "https://k-scefieldreport-50850505662.us-west1.run.app/",
+        "img": "https://af822648e7.clvaw-cdnwnd.com/ebf04d199ab717981e71d4116475e828/200000005-53d3453d36/Logo%20K-SCEFR.gif?ph=af822648e7",
+        "desc": "Geração de reatorio de campo no ambito do SCE - Portugal"
+      },
+      {
+        "url": "https://k-chbcselect-50850505662.us-west1.run.app/",
+        "img": "https://af822648e7.clvaw-cdnwnd.com/ebf04d199ab717981e71d4116475e828/200000006-744c6744c8/K-CHBCSELECT.gif?ph=af822648e7",
+        "desc": "Ferramenta de selecção de Chillers e Bombas de Calor"
+      },
+      {
+        "url": "https://k-start-eng-50850505662.us-west1.run.app/",
+        "img": "https://af822648e7.clvaw-cdnwnd.com/ebf04d199ab717981e71d4116475e828/200000000-8638386385/K-START-ENG_logo.gif?ph=af822648e7",
+        "desc": "Aplicação para selecção de sistemas tecnicos e geração em fase inicial de memorias e estimativas"
+      },
+      {
+        "url": "https://k-aircimprove-50850505662.us-west1.run.app/",
+        "img": "https://af822648e7.clvaw-cdnwnd.com/ebf04d199ab717981e71d4116475e828/200000007-281f7281f8/K-AIRCIMPROVE_logo.gif?ph=af822648e7",
+        "desc": "Aplicação de geração de relatorio de medidas de eficiencia energética nos sistemas de Ar Comprimido"
+      },
+      {
+        "url": "https://k-dataelect-50850505662.us-west1.run.app/",
+        "img": "https://af822648e7.clvaw-cdnwnd.com/ebf04d199ab717981e71d4116475e828/200000008-27e6527e67/K-DATAELECTANALYSE.gif?ph=af822648e7",
+        "desc": "Ferramenta profissional de análise de telecontagem elétrica e geração de relatórios."
+      },
+      {
+        "url": "https://k-pvprosim-50850505662.us-west1.run.app/",
+        "img": "https://af822648e7.clvaw-cdnwnd.com/ebf04d199ab717981e71d4116475e828/200000009-7695a7695c/K-PVSIMPRO.gif?ph=af822648e7",
+        "desc": "Simulação de sistemas fotovoltaicos profissional"
+      },
+      {
+        "url": "https://k-simsace-50850505662.us-west1.run.app/",
+        "img": "https://af822648e7.clvaw-cdnwnd.com/ebf04d199ab717981e71d4116475e828/200000001-72a3172a33/K-SIMSACE.gif?ph=af822648e7",
+        "desc": "Simulador de lista de pontos de GTC"
+      },
+      {
+        "url": "https://k-hovensim-pro-961784513318.us-west1.run.app/",
+        "img": "https://af822648e7.clvaw-cdnwnd.com/ebf04d199ab717981e71d4116475e828/200000010-3c4263c428/Logo%20-%20K-HOVENSIM.gif?ph=af822648e7",
+        "desc": "Aplicação para simulação de alteração de fornos industriais e cálcuo energético"
+      },
+      {
+        "url": "https://koelho2000.github.io/K-CLIMEPWCREATE/",
+        "img": "https://af822648e7.clvaw-cdnwnd.com/ebf04d199ab717981e71d4116475e828/200000011-44a1244a14/Logo-3.gif?ph=af822648e7",
+        "desc": "Importação de ficheiros climáticos EPW, análise e conversão para CSV."
+      },
+      {
+        "url": "https://koelho2000.github.io/PMP_GeradorRelatorio/",
+        "img": "https://af822648e7.clvaw-cdnwnd.com/ebf04d199ab717981e71d4116475e828/200000012-78d9378d96/K-PMP.gif?ph=af822648e7",
+        "desc": "Gerador de relatório de PMP com familias e periodicidades"
+      },
+      {
+        "url": "https://k-anepcassis-386479569212.us-west1.run.app/",
+        "img": "https://af822648e7.clvaw-cdnwnd.com/ebf04d199ab717981e71d4116475e828/200000013-7caee7caf1/Logo-5.gif?ph=af822648e7",
+        "desc": "A K-ANEPCASSIS é uma ferramenta profissional de apoio ao projeto de Segurança Contra Incêndio em Edifícios (SCIE), desenvolvida para arquitetos, engenheiros e projetistas."
+      },
+      {
+        "url": "https://koelho2000.github.io/K-PUMPSELECT/",
+        "img": "https://af822648e7.clvaw-cdnwnd.com/ebf04d199ab717981e71d4116475e828/200000014-1e9b51e9b6/Logo-9.gif?ph=af822648e7",
+        "desc": "Aplicação de selecção de bombas de circulação"
+      },
+      {
+        "url": "https://gemini.google.com/share/d1564d9a04b8",
+        "img": "https://af822648e7.clvaw-cdnwnd.com/ebf04d199ab717981e71d4116475e828/200000002-b26cdb26cf/logo.gif?ph=af822648e7",
+        "desc": "Simulação de sistemas adiabáticos com base em equipamentos da France Air"
+      },
+      {
+        "url": "https://k-costestimate-50850505662.us-west1.run.app",
+        "img": "https://af822648e7.clvaw-cdnwnd.com/ebf04d199ab717981e71d4116475e828/200000015-56b5f56b60/Logo-Costestimate.gif?ph=af822648e7",
+        "desc": "Aplicação para geração de orçamentos detalhados de engenharia com suporte a IA para estimativas e leitura de PDFs"
+      },
+      {
+        "url": "https://k-animakerprostudio-50850505662.us-west1.run.app/",
+        "img": "https://af822648e7.clvaw-cdnwnd.com/ebf04d199ab717981e71d4116475e828/200000016-4d8304d831/Logo.jpeg?ph=af822648e7",
+        "desc": "App para apoio de realizador de cinema de animação. Gera scripts, personagens, cenários, cenas, takes, imagens e vídeos usando IA."
+      }
+    ],
     images: [
       "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1600",
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1600",
@@ -43,8 +132,8 @@ const companies = [
     description: "Série educativa sobre eficiência energética e sustentabilidade. Descobre a energia do futuro com Sunny, Breezy e Splashy!",
     url: "https://www.eia.pt",
     image: "https://raw.githubusercontent.com/koelho2000/K/61376feeed3334a822f3a9aa0e89410d213b11e2/IMAGENS_EIA/Episódio 1 A Luz Certa PT-Cover.jpg",
-    youtubeId: "CkHk3qKle_A",
     youtubePlaylist: "https://www.youtube.com/playlist?list=PLHHMjSyJQeBCFjuuPaqrhqMic374sFIkG",
+    youtubeVideos: ['CkHk3qKle_A', 'B1F8Er1F6sc', 'GRcdf_OZZ20', 'axSu_LYZKIw', 'f321tNWXbVM', 'tGJEOlb_rj0', 'mfe_koaW6wY', '50cWuFnTF20', 'IR-KT26Plwo', 'ux7nVCk1HLA', '-78WqSJ5bEI'],
     images: [
       "https://raw.githubusercontent.com/koelho2000/K/61376feeed3334a822f3a9aa0e89410d213b11e2/IMAGENS_EIA/Episódio 1 A Luz Certa PT-Cover.jpg",
       "https://raw.githubusercontent.com/koelho2000/K/61376feeed3334a822f3a9aa0e89410d213b11e2/IMAGENS_EIA/[S1E2] Close the door PT-Cover.jpg",
@@ -98,7 +187,11 @@ function KBrothersVideo() {
     { type: 'image', src: "https://raw.githubusercontent.com/koelho2000/K/61376feeed3334a822f3a9aa0e89410d213b11e2/IMAGENS_K-BROTHERS/buzinho a aventura-Cover.jpg" },
     { type: 'image', src: "https://raw.githubusercontent.com/koelho2000/K/61376feeed3334a822f3a9aa0e89410d213b11e2/IMAGENS_K-BROTHERS/ZUM-Cover.jpg" }
   ];
+  const youtubeVideos = ['R7Oir3i8R_4'];
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+  const [activeYoutubeId, setActiveYoutubeId] = useState<string | null>(null);
+  const [currentYoutubeIndex, setCurrentYoutubeIndex] = useState(0);
 
   useEffect(() => {
     let timeout: NodeJS.Timeout;
@@ -109,6 +202,23 @@ function KBrothersVideo() {
     }
     return () => clearTimeout(timeout);
   }, [currentIndex]);
+
+  useEffect(() => {
+    if (youtubeVideos.length > 1) {
+      const interval = setInterval(() => {
+        setCurrentYoutubeIndex((prev) => (prev + 1) % youtubeVideos.length);
+      }, 5000);
+      return () => clearInterval(interval);
+    }
+  }, []);
+
+  const nextYoutubeVideo = () => {
+    setCurrentYoutubeIndex((prev) => (prev + 1) % youtubeVideos.length);
+  };
+
+  const prevYoutubeVideo = () => {
+    setCurrentYoutubeIndex((prev) => (prev - 1 + youtubeVideos.length) % youtubeVideos.length);
+  };
 
   return (
     <section className="relative min-h-screen bg-black py-16 @md:py-24 flex flex-col items-center justify-center overflow-hidden border-t border-white/10">
@@ -161,22 +271,99 @@ function KBrothersVideo() {
             href="https://www.youtube.com/playlist?list=PLHHMjSyJQeBBmOTRLOZ_BlQcc2PBzo3dJ"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 px-8 py-4 bg-red-600 hover:bg-red-700 text-white rounded-full font-bold uppercase tracking-wider transition-colors shadow-lg"
+            className="flex items-center gap-3 px-8 py-4 bg-red-600 hover:bg-red-700 text-white rounded-full font-bold uppercase tracking-wider transition-colors shadow-lg mb-12"
           >
             <Youtube className="w-6 h-6" />
             <span>Ver Playlist no YouTube</span>
           </motion.a>
+
+          {youtubeVideos.length > 0 && (
+            <div className="w-full max-w-md relative rounded-xl overflow-hidden border border-white/10 group">
+              <AnimatePresence mode="wait">
+                <motion.button
+                  key={youtubeVideos[currentYoutubeIndex]}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.5 }}
+                  onClick={() => { setActiveYoutubeId(youtubeVideos[currentYoutubeIndex]); setIsVideoOpen(true); }}
+                  className="relative w-full aspect-video block"
+                >
+                  <img 
+                    src={`https://img.youtube.com/vi/${youtubeVideos[currentYoutubeIndex]}/mqdefault.jpg`} 
+                    alt="Video thumbnail" 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <Play className="w-12 h-12 text-white" />
+                  </div>
+                </motion.button>
+              </AnimatePresence>
+              
+              {youtubeVideos.length > 1 && (
+                <>
+                  <button 
+                    onClick={(e) => { e.stopPropagation(); prevYoutubeVideo(); }}
+                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white hover:bg-black/80 transition-colors z-10"
+                  >
+                    <ChevronLeft className="w-5 h-5" />
+                  </button>
+                  <button 
+                    onClick={(e) => { e.stopPropagation(); nextYoutubeVideo(); }}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white hover:bg-black/80 transition-colors z-10"
+                  >
+                    <ChevronRight className="w-5 h-5" />
+                  </button>
+
+                  <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
+                    {youtubeVideos.map((_, idx) => (
+                      <div 
+                        key={idx} 
+                        className={`w-2 h-2 rounded-full transition-colors ${idx === currentYoutubeIndex ? 'bg-red-600' : 'bg-white/50'}`}
+                      />
+                    ))}
+                  </div>
+                </>
+              )}
+            </div>
+          )}
         </motion.div>
       </div>
+
+      {/* Video Modal */}
+      {isVideoOpen && activeYoutubeId && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-sm p-4 @md:p-12">
+          <button 
+            onClick={() => { setIsVideoOpen(false); setActiveYoutubeId(null); }}
+            className="absolute top-4 right-4 @md:top-8 @md:right-8 text-white/70 hover:text-white transition-colors z-50 bg-black/50 rounded-full p-2"
+          >
+            <X className="w-6 h-6 @md:w-10 @md:h-10" />
+          </button>
+          <div className="w-full max-w-6xl aspect-video relative rounded-2xl overflow-hidden shadow-2xl bg-black">
+            <iframe 
+              width="100%" 
+              height="100%" 
+              src={`https://www.youtube.com/embed/${activeYoutubeId}?autoplay=1`} 
+              title="YouTube video player" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
 
-function CompanyCard({ company, index, containerRef }: { key?: string, company: { id: string, name: string, subtitle: string, description: string, url: string | null, image: string, images?: string[], videos?: string[], youtubeId?: string, youtubePlaylist?: string, videoBg?: string }, index: number, containerRef: RefObject<HTMLDivElement | null> }) {
+function CompanyCard({ company, index, containerRef }: { key?: string, company: { id: string, name: string, subtitle: string, description: string, url: string | null, image: string, images?: string[], videos?: string[], youtubeId?: string, youtubePlaylist?: string, videoBg?: string, youtubeVideos?: string[], applications?: { url: string, img: string, desc: string }[] }, index: number, containerRef: RefObject<HTMLDivElement | null> }) {
   const ref = useRef<HTMLDivElement>(null);
   const [isVideoOpen, setIsVideoOpen] = useState(false);
+  const [activeYoutubeId, setActiveYoutubeId] = useState<string | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const [currentYoutubeIndex, setCurrentYoutubeIndex] = useState(0);
+  const [currentAppIndex, setCurrentAppIndex] = useState(0);
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -193,6 +380,44 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
       return () => clearInterval(interval);
     }
   }, [company.images]);
+
+  useEffect(() => {
+    if (company.youtubeVideos && company.youtubeVideos.length > 1) {
+      const interval = setInterval(() => {
+        setCurrentYoutubeIndex((prev) => (prev + 1) % company.youtubeVideos!.length);
+      }, 5000);
+      return () => clearInterval(interval);
+    }
+  }, [company.youtubeVideos]);
+
+  useEffect(() => {
+    if (company.applications && company.applications.length > 1) {
+      const interval = setInterval(() => {
+        setCurrentAppIndex((prev) => (prev + 1) % company.applications!.length);
+      }, 5000);
+      return () => clearInterval(interval);
+    }
+  }, [company.applications]);
+
+  const nextYoutubeVideo = () => {
+    if (!company.youtubeVideos) return;
+    setCurrentYoutubeIndex((prev) => (prev + 1) % company.youtubeVideos!.length);
+  };
+
+  const prevYoutubeVideo = () => {
+    if (!company.youtubeVideos) return;
+    setCurrentYoutubeIndex((prev) => (prev - 1 + company.youtubeVideos!.length) % company.youtubeVideos!.length);
+  };
+
+  const nextApp = () => {
+    if (!company.applications) return;
+    setCurrentAppIndex((prev) => (prev + 1) % company.applications!.length);
+  };
+
+  const prevApp = () => {
+    if (!company.applications) return;
+    setCurrentAppIndex((prev) => (prev - 1 + company.applications!.length) % company.applications!.length);
+  };
 
   return (
     <>
@@ -270,53 +495,171 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
           </p>
         </div>
         
-        <div className="flex flex-wrap gap-4 self-start @md:self-auto mt-4 @md:mt-0">
-          {company.youtubeId && (
-            <motion.button 
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => setIsVideoOpen(true)}
-              className="flex-shrink-0 w-16 h-16 @md:w-32 @md:h-32 rounded-full bg-red-600 text-white flex flex-col items-center justify-center gap-1 @md:gap-2 hover:bg-red-700 transition-colors"
-            >
-              <span className="font-bold text-[10px] @md:text-base uppercase tracking-wider">Vídeo</span>
-              <Play className="w-5 h-5 @md:w-8 @md:h-8" />
-            </motion.button>
-          )}
-          {company.youtubePlaylist && (
-            <motion.a 
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href={company.youtubePlaylist}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-shrink-0 w-16 h-16 @md:w-32 @md:h-32 rounded-full bg-red-600 text-white flex flex-col items-center justify-center gap-1 @md:gap-2 hover:bg-red-700 transition-colors"
-            >
-              <span className="font-bold text-[10px] @md:text-base uppercase tracking-wider">Playlist</span>
-              <Youtube className="w-5 h-5 @md:w-8 @md:h-8" />
-            </motion.a>
-          )}
-          {company.url && (
-            <motion.a 
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href={company.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-shrink-0 w-16 h-16 @md:w-32 @md:h-32 rounded-full bg-white text-black flex flex-col items-center justify-center gap-1 @md:gap-2 hover:bg-gray-200 transition-colors"
-            >
-              <span className="font-bold text-[10px] @md:text-base uppercase tracking-wider">Visitar</span>
-              <ArrowUpRight className="w-5 h-5 @md:w-8 @md:h-8" />
-            </motion.a>
-          )}
+        <div className="flex flex-col items-start @md:items-end gap-6 @md:gap-8 w-full @md:w-auto mt-4 @md:mt-0">
+          <div className="flex flex-wrap gap-4">
+            {company.youtubeId && (
+              <motion.button 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => { setActiveYoutubeId(company.youtubeId!); setIsVideoOpen(true); }}
+                className="flex-shrink-0 w-16 h-16 @md:w-32 @md:h-32 rounded-full bg-red-600 text-white flex flex-col items-center justify-center gap-1 @md:gap-2 hover:bg-red-700 transition-colors"
+              >
+                <span className="font-bold text-[10px] @md:text-base uppercase tracking-wider">Vídeo</span>
+                <Play className="w-5 h-5 @md:w-8 @md:h-8" />
+              </motion.button>
+            )}
+            {company.youtubePlaylist && (
+              <motion.a 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                href={company.youtubePlaylist}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-shrink-0 w-16 h-16 @md:w-32 @md:h-32 rounded-full bg-red-600 text-white flex flex-col items-center justify-center gap-1 @md:gap-2 hover:bg-red-700 transition-colors"
+              >
+                <span className="font-bold text-[10px] @md:text-base uppercase tracking-wider">Playlist</span>
+                <Youtube className="w-5 h-5 @md:w-8 @md:h-8" />
+              </motion.a>
+            )}
+            {company.url && (
+              <motion.a 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                href={company.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-shrink-0 w-16 h-16 @md:w-32 @md:h-32 rounded-full bg-white text-black flex flex-col items-center justify-center gap-1 @md:gap-2 hover:bg-gray-200 transition-colors"
+              >
+                <span className="font-bold text-[10px] @md:text-base uppercase tracking-wider">Visitar</span>
+                <ArrowUpRight className="w-5 h-5 @md:w-8 @md:h-8" />
+              </motion.a>
+            )}
+          </div>
+
+          {(company.youtubeVideos?.length || company.applications?.length) ? (
+            <div className="flex flex-col gap-6 w-full max-w-md">
+              {company.youtubeVideos && company.youtubeVideos.length > 0 && (
+                <div className="w-full relative rounded-xl overflow-hidden border border-white/10 group">
+                  <AnimatePresence mode="wait">
+                    <motion.button
+                      key={company.youtubeVideos[currentYoutubeIndex]}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.5 }}
+                      onClick={() => { setActiveYoutubeId(company.youtubeVideos![currentYoutubeIndex]); setIsVideoOpen(true); }}
+                      className="relative w-full aspect-video block"
+                    >
+                      <img 
+                        src={`https://img.youtube.com/vi/${company.youtubeVideos[currentYoutubeIndex]}/mqdefault.jpg`} 
+                        alt="Video thumbnail" 
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <Play className="w-12 h-12 text-white" />
+                      </div>
+                    </motion.button>
+                  </AnimatePresence>
+                  
+                  {company.youtubeVideos.length > 1 && (
+                    <>
+                      <button 
+                        onClick={(e) => { e.stopPropagation(); prevYoutubeVideo(); }}
+                        className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white hover:bg-black/80 transition-colors z-10"
+                      >
+                        <ChevronLeft className="w-5 h-5" />
+                      </button>
+                      <button 
+                        onClick={(e) => { e.stopPropagation(); nextYoutubeVideo(); }}
+                        className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white hover:bg-black/80 transition-colors z-10"
+                      >
+                        <ChevronRight className="w-5 h-5" />
+                      </button>
+
+                      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
+                        {company.youtubeVideos.map((_, idx) => (
+                          <div 
+                            key={idx} 
+                            className={`w-2 h-2 rounded-full transition-colors ${idx === currentYoutubeIndex ? 'bg-red-600' : 'bg-white/50'}`}
+                          />
+                        ))}
+                      </div>
+                    </>
+                  )}
+                </div>
+              )}
+
+              {company.applications && company.applications.length > 0 && (
+                <div className="w-full relative rounded-xl overflow-hidden border border-white/10 group bg-black/40">
+                  <AnimatePresence mode="wait">
+                    <motion.a
+                      key={company.applications[currentAppIndex].url}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.5 }}
+                      href={company.applications[currentAppIndex].url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="relative w-full aspect-video flex flex-col items-center justify-center p-6 text-center hover:bg-white/5 transition-colors"
+                    >
+                      <div className="h-24 w-auto mb-4 flex items-center justify-center">
+                        <img 
+                          src={company.applications[currentAppIndex].img} 
+                          alt="App Logo" 
+                          className="max-h-full max-w-full object-contain drop-shadow-lg"
+                        />
+                      </div>
+                      <p className="text-sm @md:text-base text-gray-300 line-clamp-3">
+                        {company.applications[currentAppIndex].desc}
+                      </p>
+                      <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div className="bg-red-600 text-white px-4 py-2 rounded-full font-bold flex items-center gap-2">
+                          <span>Abrir Aplicação</span>
+                          <ArrowUpRight className="w-4 h-4" />
+                        </div>
+                      </div>
+                    </motion.a>
+                  </AnimatePresence>
+                  
+                  {company.applications.length > 1 && (
+                    <>
+                      <button 
+                        onClick={(e) => { e.preventDefault(); e.stopPropagation(); prevApp(); }}
+                        className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white hover:bg-black/80 transition-colors z-10"
+                      >
+                        <ChevronLeft className="w-5 h-5" />
+                      </button>
+                      <button 
+                        onClick={(e) => { e.preventDefault(); e.stopPropagation(); nextApp(); }}
+                        className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white hover:bg-black/80 transition-colors z-10"
+                      >
+                        <ChevronRight className="w-5 h-5" />
+                      </button>
+
+                      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex flex-wrap justify-center gap-1.5 z-10 w-full px-8">
+                        {company.applications.map((_, idx) => (
+                          <div 
+                            key={idx} 
+                            className={`w-1.5 h-1.5 rounded-full transition-colors ${idx === currentAppIndex ? 'bg-red-600' : 'bg-white/30'}`}
+                          />
+                        ))}
+                      </div>
+                    </>
+                  )}
+                </div>
+              )}
+            </div>
+          ) : null}
         </div>
       </div>
     </motion.div>
 
     {/* Video Modal */}
-    {isVideoOpen && company.youtubeId && (
+    {isVideoOpen && activeYoutubeId && (
       <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-sm p-4 @md:p-12">
         <button 
-          onClick={() => setIsVideoOpen(false)}
+          onClick={() => { setIsVideoOpen(false); setActiveYoutubeId(null); }}
           className="absolute top-4 right-4 @md:top-8 @md:right-8 text-white/70 hover:text-white transition-colors z-50 bg-black/50 rounded-full p-2"
         >
           <X className="w-6 h-6 @md:w-10 @md:h-10" />
@@ -325,7 +668,7 @@ function CompanyCard({ company, index, containerRef }: { key?: string, company: 
           <iframe 
             width="100%" 
             height="100%" 
-            src={`https://www.youtube.com/embed/${company.youtubeId}?autoplay=1`} 
+            src={`https://www.youtube.com/embed/${activeYoutubeId}?autoplay=1`} 
             title="YouTube video player" 
             frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
