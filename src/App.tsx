@@ -99,8 +99,8 @@ const companies = [
       },
       {
         "url": "https://k-dataelect-50850505662.us-west1.run.app/",
-        "img": "https://af822648e7.clvaw-cdnwnd.com/ebf04d199ab717981e71d4116475e828/200000008-27e6527e67/K-DATAELECTANALYSE.gif?ph=af822648e7",
-        "desc": "Ferramenta profissional de análise de telecontagem elétrica e geração de relatórios."
+        "img": "https://raw.githubusercontent.com/koelho2000/K/43ca51cf4d3afd7336bd20121b0cae133979ab91/IMAGENS_NOVIDADES/K-DATAELECTANALYSE.jpeg",
+        "desc": "Ferramenta profissional de análise de telecontagem elétrica e geração de relatórios, agora com módulo de análise de integração de baterias."
       },
       {
         "url": "https://k-pvprosim-50850505662.us-west1.run.app/",
@@ -169,6 +169,7 @@ const companies = [
     youtubePlaylist: "https://www.youtube.com/playlist?list=PLHHMjSyJQeBCFjuuPaqrhqMic374sFIkG",
     youtubeVideos: ['CkHk3qKle_A', 'B1F8Er1F6sc', 'GRcdf_OZZ20', 'axSu_LYZKIw', 'f321tNWXbVM', 'tGJEOlb_rj0', 'mfe_koaW6wY', '50cWuFnTF20', 'IR-KT26Plwo', 'ux7nVCk1HLA', '-78WqSJ5bEI'],
     images: [
+      "https://raw.githubusercontent.com/koelho2000/K/43ca51cf4d3afd7336bd20121b0cae133979ab91/IMAGENS_NOVIDADES/EIA_Livro.jpeg",
       "https://raw.githubusercontent.com/koelho2000/K/61376feeed3334a822f3a9aa0e89410d213b11e2/IMAGENS_EIA/Episódio 1 A Luz Certa PT-Cover.jpg",
       "https://raw.githubusercontent.com/koelho2000/K/61376feeed3334a822f3a9aa0e89410d213b11e2/IMAGENS_EIA/[S1E2] Close the door PT-Cover.jpg",
       "https://raw.githubusercontent.com/koelho2000/K/61376feeed3334a822f3a9aa0e89410d213b11e2/IMAGENS_EIA/[S1E3] Smart Washes PT-Cover.jpg",
@@ -217,6 +218,140 @@ function Hero({ containerRef }: { containerRef: RefObject<HTMLDivElement | null>
         </video>
       </motion.div>
     </section>
+  );
+}
+
+function NewsSection() {
+  const newsItems = [
+    {
+      id: 1,
+      type: 'image',
+      src: 'https://raw.githubusercontent.com/koelho2000/K/43ca51cf4d3afd7336bd20121b0cae133979ab91/IMAGENS_NOVIDADES/K-DATAELECTANALYSE.jpeg',
+      title: 'Atualização K-DATA ELECTANALYSE',
+      description: 'Atualização da ferramenta de análise de telecontagem com novo módulo de análise de integração de baterias.',
+      date: 'Abril 2026'
+    },
+    {
+      id: 2,
+      type: 'image',
+      src: 'https://raw.githubusercontent.com/koelho2000/K/43ca51cf4d3afd7336bd20121b0cae133979ab91/IMAGENS_NOVIDADES/EIA_Livro.jpeg',
+      title: 'Energy In Action nas Escolas',
+      description: 'Distribuição gratuita e apresentação do livro da EIA Energy In action nas escolas primárias. 2ª edição com 1000 exemplares.',
+      date: 'Abril 2026'
+    },
+    {
+      id: 3,
+      type: 'video',
+      src: 'https://raw.githubusercontent.com/koelho2000/K/43ca51cf4d3afd7336bd20121b0cae133979ab91/IMAGENS_NOVIDADES/EIA_Livro_Gassy.mp4',
+      title: 'O Caderno dos Super-Heróis da Energia!',
+      description: 'Preparativos a todo o gás no armazém! 1000 exemplares prontos para chegar às mãos dos pequenos leitores.',
+      date: 'Abril 2026'
+    },
+    {
+      id: 5,
+      type: 'image',
+      src: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1600',
+      title: 'Nova Plataforma de Simulação',
+      description: 'Brevemente lançaremos a nossa nova plataforma de simulação energética com IA integrada.',
+      date: '15 Maio 2026'
+    },
+    {
+      id: 6,
+      type: 'image',
+      src: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1600',
+      title: 'Atualização K-AQSPRO',
+      description: 'A nova versão da ferramenta K-AQSPRO trará suporte para novos sistemas híbridos.',
+      date: 'Junho 2026'
+    }
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % newsItems.length);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const nextNews = () => setCurrentIndex((prev) => (prev + 1) % newsItems.length);
+  const prevNews = () => setCurrentIndex((prev) => (prev - 1 + newsItems.length) % newsItems.length);
+
+  return (
+    <div className="w-full bg-black py-24 border-t border-white/10">
+      <div className="container mx-auto px-6">
+        <h2 className="text-4xl md:text-5xl font-display font-black text-white mb-12 text-center tracking-tighter">
+          NOVIDADES
+        </h2>
+        
+        <div className="max-w-5xl mx-auto relative rounded-2xl overflow-hidden border border-white/10 bg-zinc-900 group">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentIndex}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className="relative aspect-video md:aspect-[21/9] w-full flex items-center justify-center bg-black"
+            >
+              {newsItems[currentIndex].type === 'video' ? (
+                <video 
+                  src={newsItems[currentIndex].src} 
+                  autoPlay 
+                  muted 
+                  loop 
+                  playsInline
+                  className="absolute inset-0 w-full h-full object-cover opacity-60"
+                />
+              ) : (
+                <img 
+                  src={newsItems[currentIndex].src} 
+                  alt={newsItems[currentIndex].title}
+                  className="absolute inset-0 w-full h-full object-cover opacity-60"
+                  referrerPolicy="no-referrer"
+                />
+              )}
+              
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8 md:p-16">
+                <div className="inline-block bg-red-600 text-white text-xs md:text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 md:mb-6 w-fit shadow-lg">
+                  {newsItems[currentIndex].date}
+                </div>
+                <h3 className="text-3xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">
+                  {newsItems[currentIndex].title}
+                </h3>
+                <p className="text-gray-300 text-base md:text-xl max-w-3xl drop-shadow-md">
+                  {newsItems[currentIndex].description}
+                </p>
+              </div>
+            </motion.div>
+          </AnimatePresence>
+
+          <button 
+            onClick={prevNews}
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 p-3 rounded-full text-white hover:bg-black/80 transition-colors z-10 opacity-0 group-hover:opacity-100"
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+          <button 
+            onClick={nextNews}
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 p-3 rounded-full text-white hover:bg-black/80 transition-colors z-10 opacity-0 group-hover:opacity-100"
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
+
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+            {newsItems.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrentIndex(idx)}
+                className={`h-2 rounded-full transition-all ${idx === currentIndex ? 'bg-red-600 w-8' : 'bg-white/50 w-2 hover:bg-white/80'}`}
+                aria-label={`Go to slide ${idx + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -841,6 +976,8 @@ export default function App() {
           </div>
 
           <KBrothersVideo />
+          
+          <NewsSection />
 
           <footer className="bg-black text-white py-16 @md:py-24 text-center border-t border-white/10">
             <div className="container mx-auto px-6">
